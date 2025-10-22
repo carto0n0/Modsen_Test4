@@ -1108,3 +1108,9 @@
 [18:10:18] [main] INFO  BaseTest - Configuration is loaded
 [18:10:20] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (2dc1ce7b881ad2777de030a3faa84977)
 [18:10:24] [main] INFO  MainPageTest - Driver was successfully closed
+[18:23:18] [main] INFO  BaseTest - Configuration is loaded
+[18:23:20] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (482350b7ad5f22a9da11d7fa4599c9e4)
+[18:23:24] [main] INFO  MainPageTest - Driver was successfully closed
+[18:27:48] [main] INFO  BaseTest - Configuration is loaded
+[18:27:50] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (9bdeb58c0690f314bfaf9bb30b0a6e30)
+[18:28:06] [main] INFO  MainPageTest - Driver was successfully closed

@@ -94,13 +94,11 @@ public class MainPage extends GeneralPage{
     }
 
     public void clickArrowRight(){
-        String currentSlide = getActiveSlide();
+        String beforeIndex = getActiveSlide();
         safeClick(rightArrow);
-        wait.until(ExpectedConditions.not(ExpectedConditions.attributeToBe(
-                By.cssSelector("#accesspress_store_product-5 li[aria-hidden='false']"),
-                "data-slick-index",
-                currentSlide
-        )));
+        wait.until(driver ->
+                !getActiveSlide().equals(beforeIndex)
+        );
     }
 
     public void clickArrowLeft(){
@@ -118,7 +116,7 @@ public class MainPage extends GeneralPage{
 
     public String getActiveSlide() {
         WebElement activeSlide = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.cssSelector("#accesspress_store_product-5 li[aria-hidden='false']")
+                By.cssSelector("#accesspress_store_product-5 li.slick-active")
         ));
         return activeSlide.getAttribute("data-slick-index");
     }
