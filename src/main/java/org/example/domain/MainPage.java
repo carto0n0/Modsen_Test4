@@ -94,11 +94,11 @@ public class MainPage extends GeneralPage{
     }
 
     public void clickArrowRight(){
-        clickElement(rightArrow);
+        safeClick(rightArrow);
     }
 
     public void clickArrowLeft(){
-        clickElement(leftArrow);
+        safeClick(leftArrow);
     }
 
     public void scrollToFooter(){
