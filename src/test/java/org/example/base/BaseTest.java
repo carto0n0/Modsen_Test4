@@ -35,15 +35,20 @@ public abstract class BaseTest {
 
     @BeforeEach
     public void setUp() throws IOException {
-        userDataDir = Files.createTempDirectory("chrome-profile-").toString();
 
+        String isCI = System.getenv("CI");
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new"); // Headless режим
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--disable-gpu");
-        options.addArguments("--remote-allow-origins=*");
-        options.addArguments("--user-data-dir=" + userDataDir);
+
+        if ("true".equals(isCI)) {
+            userDataDir = Files.createTempDirectory("chrome-profile-").toString();
+            options.addArguments("--headless=new"); // Headless режим
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--remote-allow-origins=*");
+            options.addArguments("--user-data-dir=" + userDataDir);
+        }
+
 
         driver = new ChromeDriver(options);
         logger.info("Driver has been created: {}", driver);

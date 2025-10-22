@@ -1058,3 +1058,6 @@
 [13:50:41] [main] INFO  PizzaPageTest - Driver was successfully closed
 [13:50:42] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (4b869c9169965ac2e052249377d70950)
 [13:50:45] [main] INFO  PizzaPageTest - Driver was successfully closed
+[14:13:42] [main] INFO  BaseTest - Configuration is loaded
+[14:13:45] [main] INFO  MyAccountPageTest - Driver has been created: ChromeDriver: chrome on windows (074e70ec805ad300b06488590f0f0721)
+[14:13:49] [main] INFO  MyAccountPageTest - Driver was successfully closed
