@@ -10,6 +10,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MyAccountPageTest extends BaseTest {
@@ -20,7 +22,7 @@ public class MyAccountPageTest extends BaseTest {
 
     @BeforeEach
     @Override
-    public void setUp(){
+    public void setUp() throws IOException {
         super.setUp();
         myAccountPage = new MyAccountPage(driver);
         auth = new AutorizationPage(driver);

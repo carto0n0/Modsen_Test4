@@ -7,6 +7,7 @@ import org.example.domain.MainPage;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +20,7 @@ public class MainPageTest extends BaseTest {
     private MainPage mainPage;
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() throws IOException {
         super.setUp();
         mainPage = new MainPage(driver);
         mainPage.open();

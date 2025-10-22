@@ -11,6 +11,8 @@ import org.example.utils.ConfigReader;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebElement;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -26,7 +28,7 @@ public class MakeOrderPageTest extends BaseTest {
 
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() throws IOException {
         super.setUp();
         makeOrderPage =new MakeOrderPage(driver);
         cartPage = new CartPage(driver);

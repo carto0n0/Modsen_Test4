@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -30,7 +31,7 @@ public class CartPageTest extends BaseTest{
 
     @BeforeEach
     @Override
-    public void setUp(){
+    public void setUp() throws IOException {
         super.setUp();
         cartPage = new CartPage(driver);
         pizza = new PizzaPage(driver);

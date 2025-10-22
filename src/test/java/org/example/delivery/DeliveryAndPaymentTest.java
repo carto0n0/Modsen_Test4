@@ -6,6 +6,8 @@ import org.example.base.BaseTest;
 import org.example.domain.*;
 import org.junit.jupiter.api.*;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -14,7 +16,7 @@ public class DeliveryAndPaymentTest extends BaseTest {
     private DeliveryAndPayment deliveryAndPaymentPage;
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() throws IOException {
         super.setUp();
         deliveryAndPaymentPage = new DeliveryAndPayment(driver);
         deliveryAndPaymentPage.open();

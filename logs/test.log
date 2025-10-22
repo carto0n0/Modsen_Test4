@@ -985,3 +985,76 @@
 [13:07:53] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (90e96fca261aa3d1f2adb2f92754612f)
 [13:07:56] [main] INFO  MainPageTest - Driver was successfully closed
 [13:07:57] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (09a1d671fb8d0c79c045678dc071f5c6)
+[13:31:38] [main] INFO  BaseTest - Configuration is loaded
+[13:31:40] [main] INFO  BonusProgramPageTest - Driver has been created: ChromeDriver: chrome on windows (0c98dbb2559723dddd82dd287bef6be1)
+[13:31:43] [main] INFO  BonusProgramPageTest - Driver was successfully closed
+[13:31:43] [main] INFO  BaseTest - Configuration is loaded
+[13:31:44] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (6930165ddd6f555cde2914d70ef1393e)
+[13:32:00] [main] INFO  CartPageTest - Driver was successfully closed
+[13:32:01] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (a03a1f2d3ad9d7c39c14a393e0859326)
+[13:32:17] [main] INFO  CartPageTest - Driver was successfully closed
+[13:32:18] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (61915e8f2f30dae61238cd4286223635)
+[13:32:21] [main] INFO  CartPageTest - Driver was successfully closed
+[13:32:22] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (d5a610d2d12c727359f53adc46d029ab)
+[13:32:27] [main] INFO  CartPageTest - Driver was successfully closed
+[13:32:27] [main] INFO  BaseTest - Configuration is loaded
+[13:32:28] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (cb9aaa273f86864cbfa46c22a91e46de)
+[13:32:31] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[13:32:31] [main] INFO  BaseTest - Configuration is loaded
+[13:32:31] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (a33ae8a029cbae06d51d69127f6e4224)
+[13:32:34] [main] INFO  MainPageTest - Driver was successfully closed
+[13:32:35] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (11f30b0bdaf4d73a53b35b50e568c639)
+[13:48:10] [main] INFO  BaseTest - Configuration is loaded
+[13:48:12] [main] INFO  BonusProgramPageTest - Driver has been created: ChromeDriver: chrome on windows (a4bfad25153a39480a0f61e0c7a9c290)
+[13:48:15] [main] INFO  BonusProgramPageTest - Driver was successfully closed
+[13:48:15] [main] INFO  BaseTest - Configuration is loaded
+[13:48:17] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (e2a1ca8d6f724a3632277f2cb964cfc8)
+[13:48:32] [main] INFO  CartPageTest - Driver was successfully closed
+[13:48:33] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (f24d93a441f733b1b520bd3995dca7df)
+[13:48:49] [main] INFO  CartPageTest - Driver was successfully closed
+[13:48:50] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (858ad1cebcfe8c8458e678290ddd0337)
+[13:48:53] [main] INFO  CartPageTest - Driver was successfully closed
+[13:48:54] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (e82c09014321c5a63cb42e0cc8fae86d)
+[13:49:11] [main] INFO  CartPageTest - Driver was successfully closed
+[13:49:11] [main] INFO  BaseTest - Configuration is loaded
+[13:49:12] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (b79342822495108434d6f85b2adfdd92)
+[13:49:14] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[13:49:14] [main] INFO  BaseTest - Configuration is loaded
+[13:49:15] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (a6033b3fb94b23ee99a8613e5b5a3c7b)
+[13:49:17] [main] INFO  MainPageTest - Driver was successfully closed
+[13:49:18] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (2b242c52b9ca7f3f21a27cf4a0189f70)
+[13:49:20] [main] INFO  MainPageTest - Driver was successfully closed
+[13:49:21] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (2377468cc2094e6a3500bc5736a293fc)
+[13:49:24] [main] INFO  MainPageTest - Driver was successfully closed
+[13:49:31] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (67c6ecaaf2c244df14e85ee8175ea7f3)
+[13:49:34] [main] INFO  MainPageTest - Driver was successfully closed
+[13:49:35] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (96c04f5cb9844b5ed3c94e79a9004f37)
+[13:49:37] [main] INFO  MainPageTest - Driver was successfully closed
+[13:49:38] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (d6f8002c8805277780bb3b01519835b2)
+[13:49:41] [main] INFO  MainPageTest - Driver was successfully closed
+[13:49:41] [main] INFO  BaseTest - Configuration is loaded
+[13:49:42] [main] INFO  MakeOrderPageTest - Driver has been created: ChromeDriver: chrome on windows (ad23924f80993383b4292072775dbdad)
+[13:49:45] [main] INFO  MakeOrderPageTest - Driver was successfully closed
+[13:49:46] [main] INFO  MakeOrderPageTest - Driver has been created: ChromeDriver: chrome on windows (92ab9958ed264ec7098148fd7a591954)
+[13:50:03] [main] INFO  MakeOrderPageTest - Driver was successfully closed
+[13:50:03] [main] INFO  BaseTest - Configuration is loaded
+[13:50:04] [main] INFO  MyAccountPageTest - Driver has been created: ChromeDriver: chrome on windows (ef3ff8dc4c02ca231da0a9beebfe632c)
+[13:50:07] [main] INFO  MyAccountPageTest - Driver was successfully closed
+[13:50:07] [main] INFO  BaseTest - Configuration is loaded
+[13:50:08] [main] INFO  NavigationMenuTest - Driver has been created: ChromeDriver: chrome on windows (4e4135d1be7a502c1e345341e44491aa)
+[13:50:11] [main] INFO  NavigationMenuTest - Driver was successfully closed
+[13:50:11] [main] INFO  BaseTest - Configuration is loaded
+[13:50:12] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (08c292b7529a5461d63f53466628c9cc)
+[13:50:16] [main] INFO  PizzaPageTest - Driver was successfully closed
+[13:50:17] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (9a933e2649a56b766e9dbeeac384b120)
+[13:50:21] [main] INFO  PizzaPageTest - Driver was successfully closed
+[13:50:22] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (7e5b7207d1c0e7c0de7490a6eb7ec5e6)
+[13:50:26] [main] INFO  PizzaPageTest - Driver was successfully closed
+[13:50:26] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (4446e53fb6504a40c1a548a41544e08b)
+[13:50:30] [main] INFO  PizzaPageTest - Driver was successfully closed
+[13:50:31] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (48e20e87ce3c9f07f6791639483d7cc1)
+[13:50:35] [main] INFO  PizzaPageTest - Driver was successfully closed
+[13:50:36] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (48c33bc6b82384b30383762108c97545)
+[13:50:41] [main] INFO  PizzaPageTest - Driver was successfully closed
+[13:50:42] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (4b869c9169965ac2e052249377d70950)
+[13:50:45] [main] INFO  PizzaPageTest - Driver was successfully closed

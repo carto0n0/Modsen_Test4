@@ -6,6 +6,7 @@ import org.example.base.BaseTest;
 import org.example.domain.PizzaPage;
 import org.junit.jupiter.api.*;
 
+import java.io.IOException;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -16,7 +17,7 @@ public class PizzaPageTest extends BaseTest {
     private PizzaPage pizzaPage;
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() throws IOException {
         super.setUp();
         pizzaPage = new PizzaPage(driver);
         pizzaPage.open();

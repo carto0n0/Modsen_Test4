@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class NavigationMenuTest extends BaseTest {
@@ -16,7 +18,7 @@ public class NavigationMenuTest extends BaseTest {
 
     @BeforeEach
     @Override
-    public void setUp(){
+    public void setUp() throws IOException {
         super.setUp();
         navigationMenu = new NavigationMenu(driver);
         navigationMenu.open();

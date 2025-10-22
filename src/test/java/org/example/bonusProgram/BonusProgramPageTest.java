@@ -6,6 +6,8 @@ import org.example.base.BaseTest;
 import org.junit.jupiter.api.*;
 import org.example.domain.BonusProgramPage;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -16,7 +18,7 @@ public class BonusProgramPageTest extends BaseTest {
 
     @BeforeEach
     @Override
-    public void setUp() {
+    public void setUp() throws IOException {
         super.setUp();
         bonus = new BonusProgramPage(driver);
         bonus.open();
