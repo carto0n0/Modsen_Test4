@@ -94,15 +94,24 @@ public class MainPage extends GeneralPage{
     }
 
     public void clickArrowRight(){
-        String beforeIndex = getActiveSlide();
+        scrollToPageElement(slider);
+        String currentIndex = getActiveSlide();
         safeClick(rightArrow);
-        wait.until(driver ->
-                !getActiveSlide().equals(beforeIndex)
-        );
+        wait.until(driver -> {
+            String newIndex = getActiveSlide();
+            return !newIndex.equals(currentIndex);
+        });
     }
 
     public void clickArrowLeft(){
+        scrollToPageElement(slider);
         safeClick(leftArrow);
+        String currentIndex = getActiveSlide();
+        safeClick(leftArrow);
+        wait.until(driver -> {
+            String newIndex = getActiveSlide();
+            return !newIndex.equals(currentIndex);
+        });
     }
 
     public void scrollToFooter(){
@@ -116,7 +125,7 @@ public class MainPage extends GeneralPage{
 
     public String getActiveSlide() {
         WebElement activeSlide = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.cssSelector("#accesspress_store_product-5 li.slick-active")
+                By.cssSelector("#accesspress_store_product-5 .slick-slide.slick-active")
         ));
         return activeSlide.getAttribute("data-slick-index");
     }
