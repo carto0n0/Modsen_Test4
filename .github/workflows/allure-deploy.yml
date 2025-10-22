@@ -30,7 +30,7 @@ jobs:
 
       - name: Run tests
         run: |
-          ./mvn clean test
+          mvn clean test
 
       - name: Generate Allure report
         run: |
