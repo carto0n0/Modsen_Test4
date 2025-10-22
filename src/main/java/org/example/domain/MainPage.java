@@ -39,7 +39,7 @@ public class MainPage extends GeneralPage{
     @FindBy(css = "#accesspress_cta_simple-2 :nth-child(n+3):nth-child(-n+5) a")
     private List<WebElement> links;
 
-    @FindBy(xpath = "//*[@id=\"accesspress_store_product-5\"]/ul/a[2]")
+    @FindBy(css = "#accesspress_store_product-5 .slick-next")
     private WebElement rightArrow;
 
     @FindBy(css = "#accesspress_store_product-5 .slick-prev")

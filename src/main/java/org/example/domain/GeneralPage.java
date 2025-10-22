@@ -86,7 +86,8 @@ public abstract class GeneralPage {
 
     public void clickElement(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
-        js.executeScript("arguments[0].click();", element);
+//        js.executeScript("arguments[0].click();", element);
+        safeClick(element);
     }
 
 
