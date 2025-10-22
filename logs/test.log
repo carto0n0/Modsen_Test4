@@ -1072,3 +1072,15 @@
 [14:17:11] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (57314631fde4f27d9629fae835fbb221)
 [14:17:27] [main] INFO  CartPageTest - Driver was successfully closed
 [14:17:29] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (44f0b738f2def929e90978ddb4fae93e)
+[15:13:56] [main] INFO  BaseTest - Configuration is loaded
+[15:13:59] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (983247d5b7e428b70db1772125f8a1db)
+[15:14:02] [main] INFO  MainPageTest - Driver was successfully closed
+[15:14:16] [main] INFO  BaseTest - Configuration is loaded
+[15:14:17] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (50aede48c08354105d0d472d0b1e8f8f)
+[15:14:20] [main] INFO  MainPageTest - Driver was successfully closed
+[15:22:16] [main] INFO  BaseTest - Configuration is loaded
+[15:22:18] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (03fd78bf5262cc585aaebdd787982a82)
+[15:22:21] [main] INFO  MainPageTest - Driver was successfully closed
+[15:22:31] [main] INFO  BaseTest - Configuration is loaded
+[15:22:32] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (f39c1a7a7d403bd6b42ae3439e0bca5f)
+[15:22:35] [main] INFO  MainPageTest - Driver was successfully closed
