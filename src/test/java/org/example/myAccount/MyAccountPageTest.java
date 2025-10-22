@@ -1,10 +1,11 @@
 package org.example.myAccount;
 
+import io.qameta.allure.Allure;
+import io.qameta.allure.Description;
 import org.example.base.BaseTest;
 import org.example.domain.AutorizationPage;
 import org.example.domain.MyAccountPage;
 import org.example.utils.ConfigReader;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -28,10 +29,13 @@ public class MyAccountPageTest extends BaseTest {
 
     @Test
     @Order(1)
+    @Description("Add a file to the My Account section and verify it was uploaded")
     public void testAddFile(){
-        auth.authorize();
-        myAccountPage.openMyAccountInfo();
-        myAccountPage.addFile(ConfigReader.get("file.path"));
-        assertTrue(myAccountPage.isFileAdd(), "the file has not been added");
+        Allure.step("Authorize user", auth::authorize);
+        Allure.step("Open My Account info", myAccountPage::openMyAccountInfo);
+        Allure.step("Add file", () -> myAccountPage.addFile(ConfigReader.get("file.path")));
+        Allure.step("Verify file was added", () ->
+                assertTrue(myAccountPage.isFileAdd(), "The file has not been added")
+        );
     }
 }

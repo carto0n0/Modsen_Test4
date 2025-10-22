@@ -656,3 +656,311 @@
 [17:32:58] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [17:32:58] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (13842553dd490f42baf8ffb929ed7514)
 [17:33:01] [main] INFO  MainPageTest - Driver was successfully closed
+[17:22:16] [main] INFO  BaseTest - Configuration is loaded
+[17:22:17] [main] WARN  SeleniumManager - There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+[17:22:17] [main] WARN  SeleniumManager - Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+[17:22:19] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:22:19] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:22:19] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (d2dff6d4d9218ff2755826edbaca5952)
+[17:22:20] [main] INFO  CartPageTest - Driver was successfully closed
+[17:22:21] [main] WARN  SeleniumManager - There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+[17:22:22] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:22:22] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:22:22] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (789d18f91d878161c379a16bd5475cec)
+[17:22:23] [main] INFO  CartPageTest - Driver was successfully closed
+[17:22:23] [main] WARN  SeleniumManager - There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+[17:22:24] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:22:24] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:22:24] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (ce746f8a4ea3899806ed8fe5cd0650cd)
+[17:22:26] [main] INFO  CartPageTest - Driver was successfully closed
+[17:22:26] [main] WARN  SeleniumManager - There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+[17:22:26] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:22:26] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:22:26] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (ac70b676fea08d794a65ed6d4a704e02)
+[17:22:28] [main] INFO  CartPageTest - Driver was successfully closed
+[17:22:28] [main] INFO  BaseTest - Configuration is loaded
+[17:22:28] [main] WARN  SeleniumManager - There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+[17:22:29] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:22:29] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:22:29] [main] INFO  NavigationMenuTest - Driver has been created: ChromeDriver: chrome on windows (6df0c351dcf6d45362fd97b7a6bc41f7)
+[17:22:30] [main] INFO  NavigationMenuTest - Driver was successfully closed
+[17:22:30] [main] INFO  BaseTest - Configuration is loaded
+[17:22:30] [main] WARN  SeleniumManager - There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+[17:22:31] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:22:31] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:22:31] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (bc86371b04f9dfbe053c9f361b7585b1)
+[17:22:33] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[17:22:33] [main] INFO  BaseTest - Configuration is loaded
+[17:22:54] [main] INFO  BaseTest - Configuration is loaded
+[17:22:58] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:22:58] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:22:58] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (538f4b936389bed064d8a0acf4b64f26)
+[17:23:15] [main] INFO  CartPageTest - Driver was successfully closed
+[17:23:17] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:23:17] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:23:17] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (6cd534f93035b11fd45a5cf5f86f9fe5)
+[17:23:35] [main] INFO  CartPageTest - Driver was successfully closed
+[17:23:36] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:23:36] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:23:36] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (aef835a315ed885e7f72379541891309)
+[17:23:53] [main] INFO  CartPageTest - Driver was successfully closed
+[17:23:54] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:23:54] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:23:54] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (4fbf441e754241622766c821d07c1d12)
+[17:23:59] [main] INFO  CartPageTest - Driver was successfully closed
+[17:23:59] [main] INFO  BaseTest - Configuration is loaded
+[17:24:00] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:24:00] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:24:01] [main] INFO  NavigationMenuTest - Driver has been created: ChromeDriver: chrome on windows (c7e63b20756fbfee28a84937284e8b6b)
+[17:24:44] [main] INFO  NavigationMenuTest - Driver was successfully closed
+[17:24:44] [main] INFO  BaseTest - Configuration is loaded
+[17:24:45] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:24:45] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:24:45] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (c3692a1f383d81867be5afbe8e7d0bde)
+[17:24:53] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[17:24:53] [main] INFO  BaseTest - Configuration is loaded
+[17:24:54] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:24:54] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:24:54] [main] INFO  MyAccountPageTest - Driver has been created: ChromeDriver: chrome on windows (44bf8e84848238ffffe203b50ce5933a)
+[17:24:58] [main] INFO  MyAccountPageTest - Driver was successfully closed
+[17:24:58] [main] INFO  BaseTest - Configuration is loaded
+[17:24:59] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:24:59] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:24:59] [main] INFO  MakeOrderPageTest - Driver has been created: ChromeDriver: chrome on windows (bfccf4fe891e8f84cf54eabbcd3da1a3)
+[17:25:16] [main] INFO  MakeOrderPageTest - Driver was successfully closed
+[17:25:18] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:25:18] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:25:18] [main] INFO  MakeOrderPageTest - Driver has been created: ChromeDriver: chrome on windows (a7bd750deb1e095527df5a68b31af446)
+[17:25:24] [main] INFO  MakeOrderPageTest - Driver was successfully closed
+[17:25:24] [main] INFO  BaseTest - Configuration is loaded
+[17:25:25] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:25:25] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:25:25] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (47c492359377b79e605b617f2f3b378a)
+[17:25:28] [main] INFO  MainPageTest - Driver was successfully closed
+[17:25:29] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:25:29] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:25:29] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (534a105d7c98159fbed5510671669a51)
+[17:25:51] [main] INFO  MainPageTest - Driver was successfully closed
+[17:25:52] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[17:25:52] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[17:25:52] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (769745518696eb281780e44ad9e7bf5f)
+[17:25:54] [main] INFO  MainPageTest - Driver was successfully closed
+[09:16:56] [main] INFO  BaseTest - Configuration is loaded
+[09:16:59] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:16:59] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:16:59] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (f2f37347a4751c15fe2dd48768375e0c)
+[09:17:12] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:18:34] [main] INFO  BaseTest - Configuration is loaded
+[09:18:36] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:18:36] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:18:36] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (eb16d5d6782b9f8caf3b385ce8864028)
+[09:18:48] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:21:26] [main] INFO  BaseTest - Configuration is loaded
+[09:21:28] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:21:28] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:21:28] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (f7928f28cdc5828d15fdfac84f1cd343)
+[09:21:38] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:21:53] [main] INFO  BaseTest - Configuration is loaded
+[09:21:54] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:21:54] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:21:54] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (00d16c8cfeb7fffc813ff9ec34927457)
+[09:22:07] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:26:33] [main] INFO  BaseTest - Configuration is loaded
+[09:26:35] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:26:35] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:26:35] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (09c4ccb34cb5e2aad28cf82295ee3283)
+[09:26:47] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:27:24] [main] INFO  BaseTest - Configuration is loaded
+[09:27:26] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:27:26] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:27:26] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (a2c7fb3bb29547fcd67f8a85e689725e)
+[09:27:38] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:30:22] [main] INFO  BaseTest - Configuration is loaded
+[09:30:24] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:30:24] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:30:24] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (0828a031132ef541d9112410d78d5522)
+[09:30:36] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:30:59] [main] INFO  BaseTest - Configuration is loaded
+[09:31:01] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:31:01] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:31:01] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (2d32db60c8f985503030dcebad6652e3)
+[09:32:29] [main] INFO  BaseTest - Configuration is loaded
+[09:32:31] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:32:31] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:32:31] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (b7c1c5ad095c3c3671d526d89896f709)
+[09:32:33] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:33:59] [main] INFO  BaseTest - Configuration is loaded
+[09:34:01] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:34:01] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:34:01] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (7eeb23cf7f582aaf683a59e58301d964)
+[09:34:03] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:35:41] [main] INFO  BaseTest - Configuration is loaded
+[09:35:43] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:35:43] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:35:43] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (24c7fbb47e6970f780e69a4d381e11f1)
+[09:35:45] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:37:01] [main] INFO  BaseTest - Configuration is loaded
+[09:37:03] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:37:03] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:37:03] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (cec395323a02c7fb9bd3ef9dd9180dce)
+[09:37:05] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:39:31] [main] INFO  BaseTest - Configuration is loaded
+[09:39:32] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:39:32] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:39:32] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (007d2d2af8ef556856545623a53bfa79)
+[09:39:35] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:41:28] [main] INFO  BaseTest - Configuration is loaded
+[09:41:30] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:41:30] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:41:30] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (ea4b216c02bba433340422cb6312ad10)
+[09:41:32] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:46:12] [main] INFO  BaseTest - Configuration is loaded
+[09:46:14] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:46:14] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:46:14] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (20143dfb6ab0e190da39dbf443801da4)
+[09:46:16] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[09:47:21] [main] INFO  BaseTest - Configuration is loaded
+[09:47:22] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[09:47:22] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[09:47:22] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (4878c7c874e16eceb6dc5986fc52f7fb)
+[09:47:25] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[10:02:34] [main] INFO  BaseTest - Configuration is loaded
+[10:02:36] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:02:36] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:02:36] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (c250a1367c7576797bf2ddc26ca2672b)
+[10:02:38] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[10:03:19] [main] INFO  BaseTest - Configuration is loaded
+[10:03:21] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:03:21] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:03:21] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (80a295146c884e0cfe886cb028725c56)
+[10:03:23] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[10:09:01] [main] INFO  BaseTest - Configuration is loaded
+[10:09:03] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:09:03] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:09:03] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (a03edbd3d565224f80ca39a4d6f2faec)
+[10:09:06] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[10:13:36] [main] INFO  BaseTest - Configuration is loaded
+[10:13:39] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:13:39] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:13:39] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (4125144889b1601af4aeab4977e9e861)
+[10:13:41] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[10:14:11] [main] INFO  BaseTest - Configuration is loaded
+[10:14:13] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:14:13] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:14:13] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (62aa4eacbc5fda7997fac047a87bc682)
+[10:14:16] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[10:15:17] [main] INFO  BaseTest - Configuration is loaded
+[10:15:19] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:15:19] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:15:19] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (59a2720357ef1d4a507a06f20297867d)
+[10:15:22] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[10:20:11] [main] INFO  BaseTest - Configuration is loaded
+[10:20:13] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:20:13] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:20:13] [main] INFO  MakeOrderPageTest - Driver has been created: ChromeDriver: chrome on windows (5b58500f2953a517b3e8bac2614367d1)
+[10:20:29] [main] INFO  MakeOrderPageTest - Driver was successfully closed
+[10:20:30] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:20:30] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:20:30] [main] INFO  MakeOrderPageTest - Driver has been created: ChromeDriver: chrome on windows (788effb9cef4f35ecd1fb9204aa6c10a)
+[10:20:35] [main] INFO  MakeOrderPageTest - Driver was successfully closed
+[10:24:00] [main] INFO  BaseTest - Configuration is loaded
+[10:24:02] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:24:02] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:24:02] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (5540dde9e65712922b431f638bec41df)
+[10:24:05] [main] INFO  MainPageTest - Driver was successfully closed
+[10:24:06] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:24:06] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:24:06] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (283949493f77c583a083a267e5b5d022)
+[10:24:08] [main] INFO  MainPageTest - Driver was successfully closed
+[10:24:09] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:24:09] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:24:09] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (24db978641500bea40142221231be98a)
+[10:24:12] [main] INFO  MainPageTest - Driver was successfully closed
+[10:24:13] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:24:13] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:24:13] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (f1a58401995605ddbd5890e8b92fcf4b)
+[10:24:16] [main] INFO  MainPageTest - Driver was successfully closed
+[10:24:17] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:24:17] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:24:17] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (4578aa379b5badb360edcb892fde64bc)
+[10:24:19] [main] INFO  MainPageTest - Driver was successfully closed
+[10:24:20] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:24:20] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:24:20] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (6f20649c47d58b035343617d5fc151eb)
+[10:24:23] [main] INFO  MainPageTest - Driver was successfully closed
+[10:35:38] [main] INFO  BaseTest - Configuration is loaded
+[10:35:41] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:35:41] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:35:41] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (ab749611e83bfb74f7b7d897c88909f9)
+[10:35:43] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[10:35:57] [main] INFO  BaseTest - Configuration is loaded
+[10:35:59] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:35:59] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:35:59] [main] INFO  MyAccountPageTest - Driver has been created: ChromeDriver: chrome on windows (5e94c8a899250444b78f3fb1b50cbee7)
+[10:36:03] [main] INFO  MyAccountPageTest - Driver was successfully closed
+[10:36:19] [main] INFO  BaseTest - Configuration is loaded
+[10:36:21] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:36:21] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:36:21] [main] INFO  NavigationMenuTest - Driver has been created: ChromeDriver: chrome on windows (195890abe0121629d49ee431ce9a01b4)
+[10:36:25] [main] INFO  NavigationMenuTest - Driver was successfully closed
+[10:38:19] [main] INFO  BaseTest - Configuration is loaded
+[10:38:21] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:38:21] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:38:21] [main] INFO  BonusProgramPageTest - Driver has been created: ChromeDriver: chrome on windows (72443ab6db553599495ffc13002a0fcf)
+[10:38:23] [main] INFO  BonusProgramPageTest - Driver was successfully closed
+[10:39:37] [main] INFO  BaseTest - Configuration is loaded
+[10:39:39] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:39:39] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:39:39] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (9430dd281e786bba7d36c451c3ac9aed)
+[10:39:54] [main] INFO  CartPageTest - Driver was successfully closed
+[10:39:56] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:39:56] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:39:56] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (cbbf848fccf095042341867f0e8404ae)
+[10:40:11] [main] INFO  CartPageTest - Driver was successfully closed
+[10:40:12] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:40:12] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:40:12] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (2346abed402391046b488d70a92dbba3)
+[10:40:28] [main] INFO  CartPageTest - Driver was successfully closed
+[10:40:29] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:40:29] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:40:29] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (bb1d0bd6016de8ea7514c8022da76fbe)
+[10:40:33] [main] INFO  CartPageTest - Driver was successfully closed
+[10:44:24] [main] INFO  BaseTest - Configuration is loaded
+[10:44:26] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:44:26] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:44:26] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (230f7d2feabfe8f28403de56121068f4)
+[10:44:42] [main] INFO  CartPageTest - Driver was successfully closed
+[10:45:48] [main] INFO  BaseTest - Configuration is loaded
+[10:45:50] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:45:50] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:45:50] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (5e4e4ef5c7308afca769b395c0d00450)
+[10:45:54] [main] INFO  PizzaPageTest - Driver was successfully closed
+[10:45:55] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:45:55] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:45:55] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (d231368c38526440249f23aae982caec)
+[10:45:59] [main] INFO  PizzaPageTest - Driver was successfully closed
+[10:46:00] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:46:00] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:46:00] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (480e69daaf6cf44336d392bea52a37d0)
+[10:46:04] [main] INFO  PizzaPageTest - Driver was successfully closed
+[10:46:05] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:46:05] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:46:05] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (b54b63f98ac07120df17bd65087a85c2)
+[10:46:09] [main] INFO  PizzaPageTest - Driver was successfully closed
+[10:46:10] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:46:10] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:46:10] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (b27b5b721281c02f2a1b42b4c5b7456a)
+[10:46:14] [main] INFO  PizzaPageTest - Driver was successfully closed
+[10:46:15] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:46:15] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:46:15] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (b7b8d5b1d16208b230e8edf88d44fffb)
+[10:46:20] [main] INFO  PizzaPageTest - Driver was successfully closed
+[10:46:21] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:46:21] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:46:21] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (7e2d7c4787596a2bfa0ed037095954a8)
+[10:46:24] [main] INFO  PizzaPageTest - Driver was successfully closed
+[10:48:21] [main] INFO  BaseTest - Configuration is loaded
+[10:48:22] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[10:48:22] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[10:48:22] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (3a35482dca6135811da56fdc952b95f7)
+[10:48:38] [main] INFO  CartPageTest - Driver was successfully closed
