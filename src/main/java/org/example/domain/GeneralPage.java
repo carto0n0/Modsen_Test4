@@ -84,9 +84,10 @@ public abstract class GeneralPage {
         );
     }
 
-    public void clickElementByCss(String cssSelector) {
-        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(cssSelector)));
+    public void clickElement(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
         js.executeScript("arguments[0].click();", element);
     }
+
 
 }

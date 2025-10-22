@@ -39,6 +39,12 @@ public class MainPage extends GeneralPage{
     @FindBy(css = "#accesspress_cta_simple-2 :nth-child(n+3):nth-child(-n+5) a")
     private List<WebElement> links;
 
+    @FindBy(css = "#accesspress_store_product-5 .slick-next")
+    private WebElement rightArrow;
+
+    @FindBy(css = "#accesspress_store_product-5 .slick-prev")
+    private WebElement leftArrow;
+
     public MainPage(WebDriver driver){
         super(driver);
     }
@@ -88,11 +94,11 @@ public class MainPage extends GeneralPage{
     }
 
     public void clickArrowRight(){
-        clickElementByCss("#accesspress_store_product-5 a.slick-next");
+        clickElement(rightArrow);
     }
 
     public void clickArrowLeft(){
-        clickElementByCss("#accesspress_store_product-5 a.slick-prev");
+        clickElement(leftArrow);
     }
 
     public void scrollToFooter(){
