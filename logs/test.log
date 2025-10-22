@@ -964,3 +964,24 @@
 [10:48:22] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [10:48:22] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (3a35482dca6135811da56fdc952b95f7)
 [10:48:38] [main] INFO  CartPageTest - Driver was successfully closed
+[13:06:59] [main] INFO  BaseTest - Configuration is loaded
+[13:07:02] [main] INFO  BonusProgramPageTest - Driver has been created: ChromeDriver: chrome on windows (68e33286f45c329a2128badc9852264c)
+[13:07:05] [main] INFO  BonusProgramPageTest - Driver was successfully closed
+[13:07:05] [main] INFO  BaseTest - Configuration is loaded
+[13:07:06] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (eefb116654d330ad42bdb41b10d98bab)
+[13:07:22] [main] INFO  CartPageTest - Driver was successfully closed
+[13:07:23] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (8e5dd06ab84fb16d2c44d90c7a53f58d)
+[13:07:30] [main] INFO  CartPageTest - Driver was successfully closed
+[13:07:31] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (be93b85b9e683a3c32b783799db517c9)
+[13:07:33] [main] INFO  CartPageTest - Driver was successfully closed
+[13:07:34] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (a7f1fce451ce82c361a1cca3c5e388cd)
+[13:07:46] [main] INFO  CartPageTest - Driver was successfully closed
+[13:07:46] [main] INFO  BaseTest - Configuration is loaded
+[13:07:47] [main] INFO  DeliveryAndPaymentTest - Driver has been created: ChromeDriver: chrome on windows (dba45e579b4898c28dd61d7c7d3a0f2d)
+[13:07:49] [main] INFO  DeliveryAndPaymentTest - Driver was successfully closed
+[13:07:49] [main] INFO  BaseTest - Configuration is loaded
+[13:07:50] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (0a901d03cc84429464bb2023d0678d23)
+[13:07:52] [main] INFO  MainPageTest - Driver was successfully closed
+[13:07:53] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (90e96fca261aa3d1f2adb2f92754612f)
+[13:07:56] [main] INFO  MainPageTest - Driver was successfully closed
+[13:07:57] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (09a1d671fb8d0c79c045678dc071f5c6)
