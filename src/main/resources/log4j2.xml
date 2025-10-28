@@ -15,7 +15,7 @@
             <AppenderRef ref="File" />
         </Logger>
 
-        <Logger name="org.example" level="debug" additivity="false">
+        <Logger name="by.tanya.pizzashop" level="debug" additivity="false">
             <AppenderRef ref="Console" />
             <AppenderRef ref="File" />
         </Logger>

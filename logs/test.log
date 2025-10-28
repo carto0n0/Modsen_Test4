@@ -1120,3 +1120,105 @@
 [18:58:58] [main] INFO  BaseTest - Configuration is loaded
 [18:59:02] [main] INFO  MainPageTest - Driver has been created: ChromeDriver: chrome on windows (c5bf4d4904a407b4a614ab71c7b8045a)
 [18:59:07] [main] INFO  MainPageTest - Driver was successfully closed
+[22:11:34] [main] INFO  BaseTest - Configuration is loaded
+[22:11:37] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[22:11:37] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[22:11:37] [main] INFO  BonusProgramPageTest - Driver has been created: ChromeDriver: chrome on windows (c6106ee6277a405ceead9b3257c814ed)
+[22:11:39] [main] INFO  BonusProgramPageTest - Driver was successfully closed
+[22:27:20] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[22:27:20] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[22:27:20] [main] INFO  BonusProgramPageTest - Driver has been created: ChromeDriver: chrome on windows (cf68df3f00e7b2d102c06337a4c0f3f0)
+[22:27:21] [main] INFO  BonusProgramPageTest - Driver was successfully closed
+[22:29:53] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[22:29:53] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[22:29:53] [main] INFO  BonusProgramPageTest - Driver has been created: ChromeDriver: chrome on windows (9e46ab6eda8035b39e66e8af6571bf8e)
+[22:29:53] [main] WARN  BonusProgramPageTest - Failed to clear browser state: <unknown>: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=135.0.7049.42)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e46ab6eda8035b39e66e8af6571bf8e, executeScript {script=window.localStorage.clear(); window.sessionStorage.clear();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52615}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52615/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e46ab6eda8035b39e66e8af6571bf8e
+[22:29:55] [main] INFO  BonusProgramPageTest - Driver was successfully closed
+[22:30:55] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[22:30:55] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[22:30:55] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (4ed432c2370abdae4232c64a6cd842a7)
+[22:30:55] [main] WARN  CartPageTest - Failed to clear browser state: <unknown>: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=135.0.7049.42)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ed432c2370abdae4232c64a6cd842a7, executeScript {script=window.localStorage.clear(); window.sessionStorage.clear();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52650/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ed432c2370abdae4232c64a6cd842a7
+[22:31:10] [main] INFO  CartPageTest - Driver was successfully closed
+[22:31:10] [main] WARN  CartPageTest - Failed to clear browser state: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52650/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+[22:31:11] [main] INFO  CartPageTest - Driver was successfully closed
+[22:31:11] [main] WARN  CartPageTest - Failed to clear browser state: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52650/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+[22:31:12] [main] INFO  CartPageTest - Driver was successfully closed
+[22:31:12] [main] WARN  CartPageTest - Failed to clear browser state: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52650/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+[22:31:13] [main] INFO  CartPageTest - Driver was successfully closed
+[22:34:14] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[22:34:14] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[22:34:14] [main] INFO  CartPageTest - Driver has been created: ChromeDriver: chrome on windows (9d57421057fd3aba983586276d91171a)
+[22:34:14] [main] WARN  CartPageTest - Failed to clear browser state: <unknown>: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=135.0.7049.42)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d57421057fd3aba983586276d91171a, executeScript {script=window.localStorage.clear(); window.sessionStorage.clear();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52734}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52734/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d57421057fd3aba983586276d91171a
+[22:34:29] [main] WARN  CartPageTest - Failed to clear browser state: <unknown>: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=135.0.7049.42)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d57421057fd3aba983586276d91171a, executeScript {script=window.localStorage.clear(); window.sessionStorage.clear();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52734}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52734/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d57421057fd3aba983586276d91171a
+[22:34:43] [main] WARN  CartPageTest - Failed to clear browser state: <unknown>: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=135.0.7049.42)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d57421057fd3aba983586276d91171a, executeScript {script=window.localStorage.clear(); window.sessionStorage.clear();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52734}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52734/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d57421057fd3aba983586276d91171a
+[22:34:56] [main] WARN  CartPageTest - Failed to clear browser state: <unknown>: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=135.0.7049.42)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d57421057fd3aba983586276d91171a, executeScript {script=window.localStorage.clear(); window.sessionStorage.clear();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52734}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52734/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d57421057fd3aba983586276d91171a
+[22:34:59] [main] INFO  CartPageTest - Driver was successfully closed
+[22:41:41] [main] WARN  CdpVersionFinder - Unable to find CDP implementation matching 135
+[22:41:41] [main] WARN  ChromiumDriver - Unable to find version of CDP to use for 135.0.7049.42. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[22:41:41] [main] INFO  PizzaPageTest - Driver has been created: ChromeDriver: chrome on windows (f37751443c893fab1695b48c59cf0d8d)
+[22:41:41] [main] WARN  PizzaPageTest - Failed to clear browser state: <unknown>: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=135.0.7049.42)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f37751443c893fab1695b48c59cf0d8d, executeScript {script=window.localStorage.clear(); window.sessionStorage.clear();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52876}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52876/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f37751443c893fab1695b48c59cf0d8d
+[22:41:46] [main] INFO  PizzaPageTest - Driver was successfully closed
