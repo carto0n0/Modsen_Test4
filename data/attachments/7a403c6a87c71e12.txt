@@ -1,1 +1,0 @@
-The text was rendered via CSS (::before or ::marker) but visually confirmed.
