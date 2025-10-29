@@ -1,22 +1,23 @@
 package by.tanya.pizzashop.makeOrder;
 
 import by.tanya.pizzashop.base.BaseTest;
+import by.tanya.pizzashop.base.TestResultWatcher;
 import by.tanya.pizzashop.pages.AutorizationPage;
 import by.tanya.pizzashop.pages.CartPage;
 import by.tanya.pizzashop.pages.MakeOrderPage;
 import by.tanya.pizzashop.pages.PizzaPage;
-import by.tanya.pizzashop.utils.ConfigReader;
 import by.tanya.pizzashop.utils.Urls;
-import io.qameta.allure.Allure;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebElement;
-
-import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@Epic("Страница заказа")
+@DisplayName("Тестирование функционала страницы заказа")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(TestResultWatcher.class)
 public class MakeOrderPageTest extends BaseTest {
 
     private MakeOrderPage makeOrderPage;
@@ -29,8 +30,8 @@ public class MakeOrderPageTest extends BaseTest {
 
 
     @BeforeEach
-    public void initPage(){
-        makeOrderPage =new MakeOrderPage(driver);
+    public void initPage() {
+        makeOrderPage = new MakeOrderPage(driver);
         cartPage = new CartPage(driver);
         pizzaPage = new PizzaPage(driver);
         autorizationPage = new AutorizationPage(driver);
@@ -39,51 +40,46 @@ public class MakeOrderPageTest extends BaseTest {
 
     @Test
     @Order(1)
-    @Description("Test set date")
-    public void testSetDate(){
-        Allure.step("Authorize into website", autorizationPage::authorize);
+    @Feature("Заполнение формы")
+    @Story("Проверка установки даты доставки")
+    @DisplayName("Установка даты доставки")
+    @Description("Авторизация, добавления товара, заполнение даты заказа и проверка, что дата введена корректно.")
+    public void testSetDate() {
+        autorizationPage.authorize();
 
-        Allure.step("Open cart and choose pizza", () -> {
-            cartPage.openCartAndChoosePizza(pizzaPage);
-            assertTrue(cartPage.isCartNotEmpty(),"CartPage is empty");
-        });
+        cartPage.openCartAndChoosePizza(pizzaPage);
+        assertTrue(cartPage.isCartNotEmpty(), "CartPage is empty");
 
-        Allure.step("Press pay button and set date", () -> {
-            cartPage.clickPayBtn();
-            makeOrderPage.setDate();
+        cartPage.clickPayBtn();
+        makeOrderPage.setDate();
 
-            WebElement dateInput = makeOrderPage.getDateInput();
-            String value = dateInput.getAttribute("value").trim();
-            assertTrue(!value.isEmpty(), "Date is empty");
-            assertTrue(value.matches("\\d{4}-\\d{2}-\\d{2}"), "The date has an incorrect format.");
-        });
+        WebElement dateInput = makeOrderPage.getDateInput();
+        String value = dateInput.getAttribute("value").trim();
+
+        assertTrue(!value.isEmpty(), "Date is empty");
+        assertTrue(value.matches("\\d{4}-\\d{2}-\\d{2}"), "The date has an incorrect format.");
     }
 
     @Test
     @Order(2)
-    @Description("Test fill order form and complete order")
-    public void testFillOrderForm(){
-        Allure.step("Authorize into website", autorizationPage::authorize);
+    @Feature("Заполнение формы")
+    @Story("Заполнение формы заказа и подтверждение покупки")
+    @DisplayName("Заполнение и подтверждение заказа")
+    @Description("Авторизация, добавление товара, заполнение формы заказа, согласие с условиями и проверка успешного оформления.")
+    public void testFillOrderForm() {
+        autorizationPage.authorize();
 
-        Allure.step("Open cart and choose pizza", () -> {
-            cartPage.openCartAndChoosePizza(pizzaPage);
-            assertTrue(cartPage.isCartNotEmpty(),"CartPage is empty");
-        });
+        cartPage.openCartAndChoosePizza(pizzaPage);
+        assertTrue(cartPage.isCartNotEmpty(), "CartPage is empty");
 
-        Allure.step("Press pay button", cartPage::clickPayBtn);
+        cartPage.clickPayBtn();
 
-        Allure.step("Scroll to order form", makeOrderPage::scrollToForm);
+        makeOrderPage.scrollToForm()
+                .fillOrderForm()
+                .setPaymentMethod()
+                .agreeWithTermsAndConditions()
+                .clickOrderButton();
 
-        Allure.step("Fill order form", makeOrderPage::fillOrderForm);
-
-        Allure.step("Set payment method", makeOrderPage::setPaymentMethod);
-
-        Allure.step("Agree with terms and conditions", makeOrderPage::agreeWithTermsAndConditions);
-
-        Allure.step("Click order button", makeOrderPage::clickOrderButton);
-
-        Allure.step("Verify that order is applied", () ->
-                assertTrue(makeOrderPage.isOrderApplied(), "Order not applied")
-        );
+        assertTrue(makeOrderPage.isOrderApplied(), "Order not applied");
     }
 }

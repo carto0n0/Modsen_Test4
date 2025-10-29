@@ -1,20 +1,22 @@
 package by.tanya.pizzashop.myAccount;
 
 import by.tanya.pizzashop.base.BaseTest;
+import by.tanya.pizzashop.base.TestResultWatcher;
 import by.tanya.pizzashop.pages.AutorizationPage;
 import by.tanya.pizzashop.utils.TestData;
-import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import by.tanya.pizzashop.pages.MyAccountPage;
-import by.tanya.pizzashop.utils.ConfigReader;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-
-import java.io.IOException;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Story;
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@Epic("Аккаунт")
+@DisplayName("Тестирование функциональности аккаунта")
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(TestResultWatcher.class)
 public class MyAccountPageTest extends BaseTest {
 
     private MyAccountPage myAccountPage;
@@ -22,7 +24,7 @@ public class MyAccountPageTest extends BaseTest {
     private AutorizationPage auth;
 
     @BeforeEach
-    public void initPage(){
+    public void initPage() {
         myAccountPage = new MyAccountPage(driver);
         auth = new AutorizationPage(driver);
         auth.openAuthPage();
@@ -30,13 +32,14 @@ public class MyAccountPageTest extends BaseTest {
 
     @Test
     @Order(1)
-    @Description("Add a file to the My Account section and verify it was uploaded")
-    public void testAddFile(){
-        Allure.step("Authorize user", auth::authorize);
-        Allure.step("Open My Account info", myAccountPage::openMyAccountInfo);
-        Allure.step("Add file", () -> myAccountPage.addFile(TestData.TEST_IMAGE_PATH));
-        Allure.step("Verify file was added", () ->
-                assertTrue(myAccountPage.isFileAdd(), "The file has not been added")
-        );
+    @Story("Загрузка файла в 'Мой аккаунт'")
+    @DisplayName("Добавление файла в аккаунт")
+    @Description("Авторизация, перейти в аккаунт, добавить изображение, проверить, что файл успешно загружен.")
+    public void testAddFile() {
+        auth.authorize();
+        myAccountPage.openMyAccountInfo()
+                .addFile(TestData.TEST_IMAGE_PATH);
+
+        assertTrue(myAccountPage.isFileAdd(), "The file has not been added");
     }
 }

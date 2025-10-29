@@ -8,7 +8,8 @@ public class ConfigReader {
     private static final Properties props = new Properties();
     private static boolean isLoaded = false;
 
-    private ConfigReader() {}
+    private ConfigReader() {
+    }
 
     public static synchronized void load() {
         if (!isLoaded) {

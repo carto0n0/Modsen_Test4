@@ -1,14 +1,17 @@
 package by.tanya.pizzashop.pages;
 
-import by.tanya.pizzashop.utils.ConfigReader;
 import by.tanya.pizzashop.utils.Urls;
+import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
-public class MainPage extends GeneralPage{
+public class MainPage extends GeneralPage {
 
     @FindBy(css = "#accesspress_store_product-5 > ul")
     private WebElement slider;
@@ -46,55 +49,73 @@ public class MainPage extends GeneralPage{
     @FindBy(css = "#accesspress_store_product-5 .slick-prev")
     private WebElement leftArrow;
 
-    public MainPage(WebDriver driver){
+    public MainPage(WebDriver driver) {
         super(driver);
     }
 
-    public void open(){
+    @Step("Открыть главную страницу")
+    public MainPage open() {
         super.open(Urls.BASE);
+        return this;
     }
 
-    public void scrollToDrinkSection() {
+    @Step("Проскроллить до секции с напитками")
+    public MainPage scrollToDrinkSection() {
         scrollToPageElement(drinkSection);
+        return this;
     }
 
-    public void hoverOnDrinkImage(){
+    @Step("Навести курсор на карточку напитка")
+    public MainPage hoverOnDrinkImage() {
         hover(drinkImage);
+        return this;
     }
 
-    public boolean isAddToCartButton(){
+    @Step("Проверить наличие кнопки 'В корзину' ")
+    public boolean isAddToCartButton() {
         return isVisible(addToCartButton);
     }
 
-    public void scrollToDessertSection() {
+    @Step("Проскроллить до секции с дессертами")
+    public MainPage scrollToDessertSection() {
         scrollToPageElement(dessertSection);
+        return this;
     }
 
-    public void clickDessertImage(){
-       safeClick(dessertImage);
+    @Step("Кликнуть на карточку напитка")
+    public MainPage clickDessertImage() {
+        safeClick(dessertImage);
+        return this;
     }
 
-    public boolean isDessertPageOpened(){
+    @Step("Проверить открылась ли страница дессерта")
+    public boolean isDessertPageOpened() {
         return isVisible(dessertTitle);
     }
 
-    public void scrollArrowVisible(){
+    @Step("Проскроллить вниз страницы, для появления стрелки 'Вверх'")
+    public MainPage scrollArrowVisible() {
         ((org.openqa.selenium.JavascriptExecutor) driver)
                 .executeScript(
                         "window.scrollTo(0, document.body.scrollHeight);"
                 );
+        return this;
     }
 
-    public boolean isScrollArrowVisible(){
-        return  isVisible(scrollArrow);
+    @Step("Проверить наличие стрелки 'Вверх'")
+    public boolean isScrollArrowVisible() {
+        return isVisible(scrollArrow);
     }
 
-    public void hoverOverSlider(){
+    @Step("Навести курсор на слайдер")
+    public MainPage hoverOverSlider() {
         waitVisible(slider);
         hover(slider);
+        return this;
     }
 
-    public void clickArrowRight(){
+    @Step("Нажать на правую стрелку в слайдере")
+    public MainPage clickArrowRight() {
         scrollToPageElement(slider);
         String currentIndex = getActiveSlide();
         safeClick(rightArrow);
@@ -102,9 +123,11 @@ public class MainPage extends GeneralPage{
             String newIndex = getActiveSlide();
             return !newIndex.equals(currentIndex);
         });
+        return this;
     }
 
-    public void clickArrowLeft(){
+    @Step("Нажать на левую стрелку в слайдере")
+    public MainPage clickArrowLeft() {
         scrollToPageElement(slider);
         safeClick(leftArrow);
         String currentIndex = getActiveSlide();
@@ -113,17 +136,37 @@ public class MainPage extends GeneralPage{
             String newIndex = getActiveSlide();
             return !newIndex.equals(currentIndex);
         });
+        return this;
     }
 
-    public void scrollToFooter(){
+    @Step("Проскроллить до футера")
+    public MainPage scrollToFooter() {
         scrollToPageElement(footer);
+        return this;
     }
 
-    public List<WebElement> getLinks(){
+    @Step("Получить все ссылки на соц. сети в футере")
+    public List<WebElement> getLinks() {
         scrollToFooter();
         return waitVisibleList(links);
     }
 
+    @Step("Кликнуть по всем ссылкам на соцсети и дождаться открытия новых вкладок")
+    public int clickSocialLinksAndWaitForNewTabs() {
+        List<String> list = new ArrayList<>(driver.getWindowHandles());
+
+        getLinks().forEach(link -> link.click());
+
+        new WebDriverWait(driver, Duration.ofSeconds(5))
+                .until(driver -> driver.getWindowHandles().size() > list.size());
+
+        List<String> newList = new ArrayList<>(driver.getWindowHandles());
+        newList.removeAll(list);
+
+        return newList.size();
+    }
+
+    @Step("Получить активный слайд в слайдере")
     public String getActiveSlide() {
         WebElement activeSlide = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.cssSelector("#accesspress_store_product-5 .slick-slide.slick-active")

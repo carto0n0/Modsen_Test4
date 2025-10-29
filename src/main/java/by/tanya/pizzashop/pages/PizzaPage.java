@@ -1,8 +1,8 @@
 package by.tanya.pizzashop.pages;
 
-import by.tanya.pizzashop.utils.ConfigReader;
 import by.tanya.pizzashop.utils.Shared;
 import by.tanya.pizzashop.utils.Urls;
+import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-public class PizzaPage extends GeneralPage{
+public class PizzaPage extends GeneralPage {
 
     @FindBy(css = "#primary form select")
     private WebElement sortDropDown;
@@ -39,58 +39,67 @@ public class PizzaPage extends GeneralPage{
     @FindBy(css = "input.qty")
     private WebElement quantityInput;
 
-    public PizzaPage(WebDriver driver){
+    public PizzaPage(WebDriver driver) {
         super(driver);
     }
 
-    public void open(){
+    @Step("Открыть страницу выбора пиццы")
+    public PizzaPage open() {
         super.open(Urls.PIZZA);
+        return this;
     }
 
-    public void selectSort(String value){
+    @Step("Выбрать сортировку")
+    public PizzaPage selectSort(String value) {
         waitClickable(sortDropDown);
-        Select select =new Select(sortDropDown);
+        Select select = new Select(sortDropDown);
         select.selectByValue(value);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(
                 By.cssSelector("#primary .wc-products")
         ));
         try {
             Thread.sleep(1500);
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        return this;
     }
 
-    public List<String> pizzaTitle(){
+    @Step("Получить список названий пицц")
+    public List<String> pizzaTitle() {
         waitVisibleList(pizzaCards);
         List<String> titles = new ArrayList<>();
-        for(WebElement card:pizzaCards){
+        for (WebElement card : pizzaCards) {
             try {
                 WebElement titleElement = card.findElement(
                         By.cssSelector("#primary h3"
                         ));
                 titles.add(titleElement.getText().strip());
-            } catch (NoSuchElementException e){
+            } catch (NoSuchElementException e) {
             }
         }
         return titles;
     }
 
-    public List<Double> pizzaPrices(){
+    @Step("Получить список цен пицц")
+    public List<Double> pizzaPrices() {
         waitVisibleList(pizzaCards);
         List<Double> prices = new ArrayList<>();
-        for(WebElement card :pizzaCards){
+        for (WebElement card : pizzaCards) {
             try {
                 WebElement priceElement = card.findElement(
                         By.cssSelector(".price span.amount")
                 );
-                String priceText = priceElement.getText().replace("от","").strip();
+                String priceText = priceElement.getText().replace("от", "").strip();
                 prices.add(Shared.parsePrice(priceText));
-            }catch (Exception e){ }
-        } return prices;
+            } catch (Exception e) {
+            }
+        }
+        return prices;
     }
 
-    public void filterByPrice(int moveMinX, int moveMaxX) {
+    @Step("Сортировать по цене")
+    public PizzaPage filterByPrice(int moveMinX, int moveMaxX) {
         scrollToPageElement(sortDropDown);
         waitVisible(filterbutton);
 
@@ -123,17 +132,27 @@ public class PizzaPage extends GeneralPage{
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(
                 "#primary div.wc-products"
         )));
-        try { Thread.sleep(1500); } catch (InterruptedException e) { e.printStackTrace(); }
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return this;
     }
 
-    public void addFirstPizzaToCart() {
+    @Step("Добавить пиццу в корзину")
+    public PizzaPage addFirstPizzaToCart() {
         waitClickable(addtoCartButton).click();
+        return this;
     }
 
-    public void clickDetailsButton() {
+    @Step("Перейти на в корзину")
+    public PizzaPage clickDetailsButton() {
         waitClickable(detailsButton).click();
+        return this;
     }
 
+    @Step("Получить сумму из корзины")
     public int getCartCount() {
         waitVisible(quantityInput);
         String valueText = quantityInput.getAttribute("value");

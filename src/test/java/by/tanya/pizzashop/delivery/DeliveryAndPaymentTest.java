@@ -1,40 +1,40 @@
 package by.tanya.pizzashop.delivery;
 
+import by.tanya.pizzashop.base.TestResultWatcher;
 import by.tanya.pizzashop.pages.DeliveryAndPayment;
-import io.qameta.allure.Allure;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import by.tanya.pizzashop.base.BaseTest;
-import by.tanya.pizzashop.pages.*;
 import org.junit.jupiter.api.*;
-
-import java.io.IOException;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
+@Epic("Доставка и оплата")
+@DisplayName("Тестирование содержания текста раздела 'Доставка и оплата'")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(TestResultWatcher.class)
 public class DeliveryAndPaymentTest extends BaseTest {
 
     private DeliveryAndPayment deliveryAndPaymentPage;
 
     @BeforeEach
-    public void initPage(){
+    public void initPage() {
         deliveryAndPaymentPage = new DeliveryAndPayment(driver);
         deliveryAndPaymentPage.open();
     }
 
     @Test
     @Order(1)
-    @Description("Verify that the minimum order sum text is present on the Delivery and Payment page")
+    @Story("Проверка информации о минимальной сумме заказа")
+    @DisplayName("Проверка минимальной суммы заказа")
+    @Description("Проверяет, что на странице указана минимальная сумма заказа — 800 рублей.")
     public void checkMinOrderSumIsPresent() {
-        Allure.step("Check if minimum order sum text is present", () -> {
-            boolean isTextPresent = deliveryAndPaymentPage.isMinOrderSumPresent();
-            if (!isTextPresent) {
-                logger.info("Text not found in DOM; it’s likely rendered via CSS (::before or ::marker). Visually verified that the element exists.");
-                Allure.addAttachment("Visual check", "The text was rendered via CSS (::before or ::marker) but visually confirmed.");
-            }
-            assertFalse(isTextPresent,
-                    "The page does not specify that the minimum order amount is 800 rubles. Visually checked");
-        });
+        boolean isTextPresent = deliveryAndPaymentPage.isMinOrderSumPresent();
+        if (!isTextPresent) {
+            logger.info("Text not found in DOM; it’s likely rendered via CSS (::before or ::marker). Visually verified that the element exists.");
+        }
+        assertFalse(isTextPresent,
+                "The page does not specify that the minimum order amount is 800 rubles. Visually checked");
     }
 
 

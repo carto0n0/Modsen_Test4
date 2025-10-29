@@ -1,22 +1,21 @@
 package by.tanya.pizzashop.bonusProgram;
 
 import by.tanya.pizzashop.base.BaseTest;
-import io.qameta.allure.Allure;
-import io.qameta.allure.Description;
+import by.tanya.pizzashop.base.TestResultWatcher;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 import by.tanya.pizzashop.pages.BonusProgramPage;
-
-import java.io.IOException;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@Epic("Бонусная программа")
+@DisplayName("Тестирование функционала бонусной программы")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(TestResultWatcher.class)
 public class BonusProgramPageTest extends BaseTest {
 
     private BonusProgramPage bonus;
-
-
-
 
     @BeforeEach
     public void initPage() {
@@ -26,11 +25,15 @@ public class BonusProgramPageTest extends BaseTest {
 
     @Test
     @Order(1)
-    @Description("Fill the bonus form and verify it was submitted successfully")
-    public void testBonusCard(){
-        Allure.step("Fill the bonus form", bonus::FillBonusForm);
-        Allure.step("Verify that the form was submitted", () ->
-                assertTrue(bonus.isBonusFormSent(), "The form has not been submitted")
-        );
+    @DisplayName("Отправка заявки на бонусную карту")
+    @Story("Заполнить форму для бонусной карты")
+    @Description("Заполнить форму бонусной программы и проверить, что появляется алерт об успешной отправке заявки")
+    public void testBonusCard() {
+        boolean sent = bonus
+                .fillBonusForm()
+                .waitForAlert()
+                .isBonusFormSent();
+
+        assertTrue(sent, "The form has not been submitted");
     }
 }

@@ -1,7 +1,7 @@
 package by.tanya.pizzashop.pages;
 
-import by.tanya.pizzashop.utils.ConfigReader;
 import by.tanya.pizzashop.utils.Urls;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,14 +13,18 @@ public class DeliveryAndPayment extends GeneralPage {
     @FindBy(css = "li")
     private List<WebElement> listItems;
 
-    public DeliveryAndPayment(WebDriver driver){
+    public DeliveryAndPayment(WebDriver driver) {
         super(driver);
     }
 
-    public void open(){
+    @Step("Открыть страницу доставки и оплаты")
+    public DeliveryAndPayment open() {
         super.open(Urls.DELIVERY);
+        return this;
     }
 
+
+    @Step("Проверить наличие информации о мнимальной сумме заказа 800 рублей")
     public boolean isMinOrderSumPresent() {
 
         for (WebElement item : listItems) {

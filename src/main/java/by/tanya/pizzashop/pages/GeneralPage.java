@@ -76,7 +76,7 @@ public abstract class GeneralPage {
         }
     }
 
-    public List<WebElement> waitVisibleList(List<WebElement> listElement){
+    public List<WebElement> waitVisibleList(List<WebElement> listElement) {
         return wait.until(ExpectedConditions.visibilityOfAllElements(listElement));
     }
 
@@ -87,11 +87,4 @@ public abstract class GeneralPage {
                         .equals("complete")
         );
     }
-
-    public void clickElement(WebElement element) {
-        wait.until(ExpectedConditions.elementToBeClickable(element));
-        js.executeScript("arguments[0].click();", element);
-    }
-
-
 }

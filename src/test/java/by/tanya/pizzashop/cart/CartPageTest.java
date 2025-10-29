@@ -1,25 +1,22 @@
 package by.tanya.pizzashop.cart;
 
-import io.qameta.allure.Allure;
-import io.qameta.allure.Description;
+import by.tanya.pizzashop.base.TestResultWatcher;
+import io.qameta.allure.*;
 import by.tanya.pizzashop.base.BaseTest;
 import by.tanya.pizzashop.pages.AutorizationPage;
 import by.tanya.pizzashop.pages.CartPage;
 import by.tanya.pizzashop.pages.MainPage;
 import by.tanya.pizzashop.pages.PizzaPage;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.junit.jupiter.api.extension.ExtendWith;
 
-import java.io.IOException;
-import java.time.Duration;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@Epic("Корзина")
+@DisplayName("Тестирование функционала корзины")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class CartPageTest extends BaseTest{
+@ExtendWith(TestResultWatcher.class)
+public class CartPageTest extends BaseTest {
 
     private CartPage cartPage;
 
@@ -30,7 +27,7 @@ public class CartPageTest extends BaseTest{
     private MainPage main;
 
     @BeforeEach
-    public void initPage(){
+    public void initPage() {
         cartPage = new CartPage(driver);
         pizza = new PizzaPage(driver);
         auth = new AutorizationPage(driver);
@@ -40,87 +37,79 @@ public class CartPageTest extends BaseTest{
 
     @Test
     @Order(1)
-    @Description("Verify changing product quantity in the cart increases and decreases correctly")
+    @Feature("Изменение количества товара")
+    @Story("Проверка увеличения и уменьшения количества пиццы")
+    @DisplayName("Изменение количества товара в корзине")
+    @Description("Проверяем, что количество товара в корзине корректно увеличивается и уменьшается")
     public void testChangeProductQuantity() {
-        Allure.step("Add pizza to cart", () -> cartPage.openCartAndChoosePizza(pizza));
-        Allure.step("Verify cart is not empty", () -> assertTrue(cartPage.isCartNotEmpty(), "CartPage is empty"));
+
+        cartPage.openCartAndChoosePizza(pizza);
+        assertTrue(cartPage.isCartNotEmpty(), "CartPage is empty");
 
         int before = cartPage.getCurrentQuantity();
 
-        Allure.step("Increase quantity by 1", () -> {
-            cartPage.changeQuantity(1,true);
-            int afterIncrease = cartPage.getCurrentQuantity();
-            assertTrue(afterIncrease > before, "The quantity has not increased");
-        });
+        cartPage.changeQuantity(1, true);
+        int afterIncrease = cartPage.getCurrentQuantity();
+        assertTrue(afterIncrease > before, "The quantity has not increased");
 
-        Allure.step("Decrease quantity by 1", () -> {
-            cartPage.changeQuantity(1,false);
-            int afterDecrease = cartPage.getCurrentQuantity();
-            assertTrue(afterDecrease == before, "The quantity has not decreased");
-        });
+        cartPage.changeQuantity(1, false);
+        int afterDecrease = cartPage.getCurrentQuantity();
+        assertTrue(afterDecrease == before, "The quantity has not decreased");
+
     }
 
     @Test
     @Order(2)
-    @Description("Verify that changing product quantity updates the total sum correctly")
+    @Feature("Изменение количества товара")
+    @Story("Обновление итоговой суммы")
+    @DisplayName("Проверка изменения суммы при изменении количества товара")
+    @Description("Проверяем, что изменения количества товара в корзине корректно обновляет сумму")
     public void testChangeProductSum() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        Allure.step("Add pizza to cart", () -> cartPage.openCartAndChoosePizza(pizza));
-        Allure.step("Verify cart is not empty", () -> assertTrue(cartPage.isCartNotEmpty(), "CartPage is empty"));
 
-        Allure.step("Increase quantity and check sum", () -> {
-            double before = cartPage.getCurrentSum();
-            cartPage.changeQuantity(1,true);
-            wait.until(driver -> cartPage.getCurrentSum() > before);
-            double afterIncrease = cartPage.getCurrentSum();
-            assertTrue(afterIncrease > before, "The sum has not increased");
-        });
+        cartPage.openCartAndChoosePizza(pizza);
+        assertTrue(cartPage.isCartNotEmpty(), "CartPage is empty");
 
-        Allure.step("Decrease quantity and check sum", () -> {
-            double before = cartPage.getCurrentSum();
-            cartPage.changeQuantity(1,false);
-            wait.until(driver -> cartPage.getCurrentSum() == before);
-            double afterDecrease = cartPage.getCurrentSum();
-            assertEquals(before, afterDecrease, "The sum has not decreased");
-        });
+        double before = cartPage.getCurrentSum();
+
+        cartPage.changeQuantityAndWaitForSumUpdate(1, true);
+        double afterIncrease = cartPage.getCurrentSum();
+        assertTrue(afterIncrease > before, "The sum has not increased");
+
+        cartPage.changeQuantityAndWaitForSumUpdate(1, false);
+        double afterDecrease = cartPage.getCurrentSum();
+        assertTrue(afterIncrease > afterDecrease, "The sum has not decreased");
     }
 
     @Test
     @Order(3)
-    @Description("Go to the payment page after authorizing and selecting pizza")
+    @Story("Переход к оплате")
+    @DisplayName("Проверка перехода к оплате после авторизации")
+    @Description("Авторизуется, добавляет пиццу в корзину и проверяет переход к странице оплаты.")
     public void goToPaying() {
-        Allure.step("Authorize user", auth::authorize);
-        Allure.step("Add pizza to cart", () -> cartPage.openCartAndChoosePizza(pizza));
-        Allure.step("Verify cart is not empty", () -> assertTrue(cartPage.isCartNotEmpty(),"CartPage is empty"));
-        Allure.step("Click pay button", cartPage::clickPayBtn);
+        auth.authorize();
+        cartPage.openCartAndChoosePizza(pizza)
+                .clickPayBtn();
+
+        String currentUrl = driver.getCurrentUrl();
+        assertTrue(currentUrl.contains("checkout"), "didn't go to the payment page");
     }
 
     @Test
     @Order(4)
-    @Description("Apply promo code and verify that the discount is applied")
+    @Story("Применение промокода")
+    @DisplayName("Применение промокода и проверка скидки")
+    @Description("Авторизуется, добавляет пиццу в корзину, применяет промокод и проверяет, что скидка применилась.")
     public void applyPromocode() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        Allure.step("Authorize user", auth::authorize);
-        Allure.step("Add pizza to cart", () -> cartPage.openCartAndChoosePizza(pizza));
-        Allure.step("Verify cart is not empty", () -> assertTrue(cartPage.isCartNotEmpty(), "CartPage is empty"));
 
-        Allure.step("Reset promo code if present", () -> {
-            if (!driver.findElements(By.cssSelector("#post-20 .coupon-givemehalyava a")).isEmpty()) {
-                main.scrollToPageElement(cartPage.resetCouponButton());
-                cartPage.resetPromocode();
-                wait.until(ExpectedConditions.invisibilityOf(cartPage.resetCouponButton()));
-            }
-        });
+        auth.authorize();
 
-        Allure.step("Apply new promo code", () -> {
-            main.scrollToPageElement(cartPage.couponInputElement());
-            cartPage.enterCoupon();
-            cartPage.clickApplyCouponBtn();
+        cartPage.openCartAndChoosePizza(pizza)
+                .resetPromocodeIfPresent(main)
+                .enterCoupon()
+                .clickApplyCouponBtn();
 
-            double generalSum = cartPage.getGeneralPaymentSum();
-            wait.until(driver -> cartPage.getTotalPaymentSum() < generalSum);
-            double totalSum = cartPage.getTotalPaymentSum();
-            assertTrue(totalSum < generalSum, "Coupon doesn't apply");
-        });
+        double generalSum = cartPage.getGeneralPaymentSum();
+        double totalSum = cartPage.getTotalPaymentSum();
+        assertTrue(totalSum < generalSum, "Coupon doesn't apply");
     }
 }
