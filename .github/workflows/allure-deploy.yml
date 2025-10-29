@@ -3,7 +3,7 @@ name: Allure Report Deploy
 on:
   push:
     branches:
-      - main
+      - testbr
 
 jobs:
   build-and-deploy:
