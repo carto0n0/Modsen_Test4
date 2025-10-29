@@ -1,18 +1,15 @@
 package by.tanya.pizzashop.bonusProgram;
 
 import by.tanya.pizzashop.base.BaseTest;
-import by.tanya.pizzashop.base.TestResultWatcher;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 import by.tanya.pizzashop.pages.BonusProgramPage;
-import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Epic("Бонусная программа")
 @DisplayName("Тестирование функционала бонусной программы")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestResultWatcher.class)
 public class BonusProgramPageTest extends BaseTest {
 
     private BonusProgramPage bonus;

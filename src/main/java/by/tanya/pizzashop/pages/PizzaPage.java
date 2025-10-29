@@ -103,19 +103,16 @@ public class PizzaPage extends GeneralPage {
         scrollToPageElement(sortDropDown);
         waitVisible(filterbutton);
 
-        WebElement minSlider = driver.findElement(By.cssSelector(
-                "#woocommerce_price_filter-2 .ui-corner-all span:nth-child(2)"
+        WebElement minSlider = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.cssSelector("#woocommerce_price_filter-2 .ui-corner-all span:nth-child(2)")
         ));
-        WebElement maxSlider = driver.findElement(By.cssSelector(
-                "#woocommerce_price_filter-2 .ui-corner-all span:nth-child(3)"
+
+        WebElement maxSlider = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.cssSelector("#woocommerce_price_filter-2 .ui-corner-all span:nth-child(3)")
         ));
 
         Actions actions = new Actions(driver);
-        try {
-            Thread.sleep(700);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         actions.moveToElement(minSlider)
                 .clickAndHold()
                 .moveByOffset(moveMinX, 0)
@@ -129,14 +126,10 @@ public class PizzaPage extends GeneralPage {
 
         filterbutton.click();
 
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(
-                "#primary div.wc-products"
-        )));
-        try {
-            Thread.sleep(1500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#primary div.wc-products"))
+        ));
+
         return this;
     }
 

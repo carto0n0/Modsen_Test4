@@ -1,11 +1,9 @@
 package by.tanya.pizzashop.mainpage;
 
 import by.tanya.pizzashop.base.BaseTest;
-import by.tanya.pizzashop.base.TestResultWatcher;
 import by.tanya.pizzashop.pages.MainPage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -13,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @Epic("Главная страница")
 @DisplayName("Тестирование функционала главной страницы")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestResultWatcher.class)
 public class MainPageTest extends BaseTest {
     private MainPage mainPage;
 

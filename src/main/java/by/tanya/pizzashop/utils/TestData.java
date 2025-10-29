@@ -28,5 +28,5 @@ public class TestData {
     public static final String USER_EMAIL = "anisenkot7@gmail.com";
     public static final String USER_PASSWORD = "qwertyuiop";
     public static final String COUPON = "GIVEMEHALYAVA";
-    public static final String TEST_IMAGE_PATH = "src/test/resources/TestData/TestImg.jpg";
+    public static final String TEST_IMAGE_PATH = "src/main/resources/TestData/TestImg.jpg";
 }

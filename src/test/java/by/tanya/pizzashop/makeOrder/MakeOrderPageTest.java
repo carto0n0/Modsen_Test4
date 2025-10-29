@@ -1,7 +1,6 @@
 package by.tanya.pizzashop.makeOrder;
 
 import by.tanya.pizzashop.base.BaseTest;
-import by.tanya.pizzashop.base.TestResultWatcher;
 import by.tanya.pizzashop.pages.AutorizationPage;
 import by.tanya.pizzashop.pages.CartPage;
 import by.tanya.pizzashop.pages.MakeOrderPage;
@@ -9,7 +8,6 @@ import by.tanya.pizzashop.pages.PizzaPage;
 import by.tanya.pizzashop.utils.Urls;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebElement;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -17,7 +15,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @Epic("Страница заказа")
 @DisplayName("Тестирование функционала страницы заказа")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestResultWatcher.class)
 public class MakeOrderPageTest extends BaseTest {
 
     private MakeOrderPage makeOrderPage;

@@ -27,7 +27,7 @@ public class CartPage extends GeneralPage {
     @FindBy(css = "#coupon_code")
     private WebElement couponInput;
 
-    @FindBy(css = ".cart-collaterals .cart-subtotal td span\n")
+    @FindBy(css = ".cart-collaterals .cart-subtotal td span")
     private WebElement generalSumBlock;
     @FindBy(css = "#post-20  strong > span")
     private WebElement finalSumBlock;
@@ -134,7 +134,9 @@ public class CartPage extends GeneralPage {
 
     @Step("Получить финальную сумму к оплате")
     public double getTotalPaymentSum() {
-        waitVisible(finalSumBlock);
+        WebElement finalSumBlock = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.cssSelector("#post-20  strong > span")
+        ));
         return Shared.parsePrice(finalSumBlock.getText());
     }
 

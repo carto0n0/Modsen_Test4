@@ -1,18 +1,15 @@
 package by.tanya.pizzashop.delivery;
 
-import by.tanya.pizzashop.base.TestResultWatcher;
 import by.tanya.pizzashop.pages.DeliveryAndPayment;
 import io.qameta.allure.*;
 import by.tanya.pizzashop.base.BaseTest;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @Epic("Доставка и оплата")
 @DisplayName("Тестирование содержания текста раздела 'Доставка и оплата'")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestResultWatcher.class)
 public class DeliveryAndPaymentTest extends BaseTest {
 
     private DeliveryAndPayment deliveryAndPaymentPage;

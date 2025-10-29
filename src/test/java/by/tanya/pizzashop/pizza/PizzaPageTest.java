@@ -1,20 +1,17 @@
 package by.tanya.pizzashop.pizza;
 
-import by.tanya.pizzashop.base.TestResultWatcher;
 import io.qameta.allure.*;
 import by.tanya.pizzashop.base.BaseTest;
 import by.tanya.pizzashop.pages.PizzaPage;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Epic("Каталог пицц")
-@Feature("Тестирование функциональность страницы с пиццами")
+@DisplayName("Тестирование функциональность страницы с пиццами")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestResultWatcher.class)
 public class PizzaPageTest extends BaseTest {
 
     private PizzaPage pizzaPage;

@@ -1,20 +1,17 @@
 package by.tanya.pizzashop.navigationMenu;
 
 import by.tanya.pizzashop.base.BaseTest;
-import by.tanya.pizzashop.base.TestResultWatcher;
 import io.qameta.allure.Description;
 import by.tanya.pizzashop.components.NavigationMenu;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Epic("Главная страница")
 @DisplayName("Тестирование функциональности меню")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestResultWatcher.class)
 public class NavigationMenuTest extends BaseTest {
 
     private NavigationMenu navigationMenu;

@@ -1,6 +1,5 @@
 package by.tanya.pizzashop.cart;
 
-import by.tanya.pizzashop.base.TestResultWatcher;
 import io.qameta.allure.*;
 import by.tanya.pizzashop.base.BaseTest;
 import by.tanya.pizzashop.pages.AutorizationPage;
@@ -8,14 +7,12 @@ import by.tanya.pizzashop.pages.CartPage;
 import by.tanya.pizzashop.pages.MainPage;
 import by.tanya.pizzashop.pages.PizzaPage;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Epic("Корзина")
 @DisplayName("Тестирование функционала корзины")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestResultWatcher.class)
 public class CartPageTest extends BaseTest {
 
     private CartPage cartPage;
