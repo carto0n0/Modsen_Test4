@@ -1,3 +1,0 @@
-2025-10-18 20:22:47.047 [INFO ] base.by.tanya.pizzashop.BaseTest - Configuration is loaded
-2025-10-18 20:22:48.788 [INFO ] makeOrder.by.tanya.pizzashop.MakeOrderPageTest - Driver has been created: ChromeDriver: chrome on windows (4c1ed0838d529f9389464ec8cbd741c0)
-2025-10-18 20:23:05.084 [INFO ] makeOrder.by.tanya.pizzashop.MakeOrderPageTest - Driver was successfully closed
