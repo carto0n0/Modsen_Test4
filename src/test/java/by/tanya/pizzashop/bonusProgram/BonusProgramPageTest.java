@@ -21,7 +21,6 @@ public class BonusProgramPageTest extends BaseTest {
     }
 
     @Test
-    @Order(1)
     @DisplayName("Отправка заявки на бонусную карту")
     @Story("Заполнить форму для бонусной карты")
     @Description("Заполнить форму бонусной программы и проверить, что появляется алерт об успешной отправке заявки")

@@ -28,7 +28,6 @@ public class MyAccountPageTest extends BaseTest {
     }
 
     @Test
-    @Order(1)
     @Story("Загрузка файла в 'Мой аккаунт'")
     @DisplayName("Добавление файла в аккаунт")
     @Description("Авторизация, перейти в аккаунт, добавить изображение, проверить, что файл успешно загружен.")

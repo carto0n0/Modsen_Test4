@@ -23,7 +23,6 @@ public class PizzaPageTest extends BaseTest {
     }
 
     @Test
-    @Order(1)
     @Story("Протестировать сортировку по умолчанию")
     @DisplayName("Проверка сортировки по умолчанию")
     @Description("Проверяем, что пиццы отображаются при сортировке по умолчанию")
@@ -35,7 +34,6 @@ public class PizzaPageTest extends BaseTest {
     }
 
     @Test
-    @Order(2)
     @Story("Протестировать сортировку по популярности")
     @DisplayName("Проверка сортировки по популярности")
     @Description("Проверяем, что пиццы отображаются при сортировке по популярности")
@@ -48,7 +46,6 @@ public class PizzaPageTest extends BaseTest {
     }
 
     @Test
-    @Order(3)
     @Story("Протестировать сортировку по новизне")
     @DisplayName("Проверка сортировки по новизне")
     @Description("Проверяем, что пиццы отображаются при сортировке по новизне")
@@ -61,7 +58,6 @@ public class PizzaPageTest extends BaseTest {
     }
 
     @Test
-    @Order(4)
     @Story("Протестировать сортировку по увеличению цены")
     @DisplayName("Проверка сортировки по увеличению цены")
     @Description("Проверяем, что пиццы отображаются при сортировке по увеличению цены")
@@ -81,7 +77,6 @@ public class PizzaPageTest extends BaseTest {
     }
 
     @Test
-    @Order(5)
     @Story("Протестировать сортировку по уменьшению цены")
     @DisplayName("Проверка сортировки по уменьшению цены")
     @Description("Проверяем, что пиццы отображаются при сортировке по уменьшению цены")
@@ -101,7 +96,6 @@ public class PizzaPageTest extends BaseTest {
     }
 
     @Test
-    @Order(6)
     @Story("Протестировать фильтр по цене")
     @DisplayName("Проверка фильтра по цене")
     @Description("Проверяем, что пиццы отображаются при фильтре по цене")
@@ -113,7 +107,6 @@ public class PizzaPageTest extends BaseTest {
     }
 
     @Test
-    @Order(7)
     @Story("Протестировать добавление пиццы в корзину")
     @DisplayName("Проверка добавления пиццы в корзину")
     @Description("Добавляем пиццу, проверяем, что пицца добавилась в корзину")

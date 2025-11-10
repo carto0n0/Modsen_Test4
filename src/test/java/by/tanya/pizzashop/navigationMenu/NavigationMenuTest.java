@@ -23,7 +23,6 @@ public class NavigationMenuTest extends BaseTest {
     }
 
     @Test
-    @Order(1)
     @Story("Проверка переходов между всеми разделами меню")
     @DisplayName("Переход между всеми разделами меню")
     @Description("Проверяет, что при клике на пункты меню происходит переход на правильные страницы: Pizza, Dessert, Drink.")

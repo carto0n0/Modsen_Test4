@@ -36,7 +36,6 @@ public class MakeOrderPageTest extends BaseTest {
     }
 
     @Test
-    @Order(1)
     @Feature("Заполнение формы")
     @Story("Проверка установки даты доставки")
     @DisplayName("Установка даты доставки")
@@ -58,7 +57,6 @@ public class MakeOrderPageTest extends BaseTest {
     }
 
     @Test
-    @Order(2)
     @Feature("Заполнение формы")
     @Story("Заполнение формы заказа и подтверждение покупки")
     @DisplayName("Заполнение и подтверждение заказа")

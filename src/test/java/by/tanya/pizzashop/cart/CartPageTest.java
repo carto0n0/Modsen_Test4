@@ -33,7 +33,6 @@ public class CartPageTest extends BaseTest {
     }
 
     @Test
-    @Order(1)
     @Feature("Изменение количества товара")
     @Story("Проверка увеличения и уменьшения количества пиццы")
     @DisplayName("Изменение количества товара в корзине")
@@ -56,7 +55,6 @@ public class CartPageTest extends BaseTest {
     }
 
     @Test
-    @Order(2)
     @Feature("Изменение количества товара")
     @Story("Обновление итоговой суммы")
     @DisplayName("Проверка изменения суммы при изменении количества товара")
@@ -66,11 +64,11 @@ public class CartPageTest extends BaseTest {
         cartPage.openCartAndChoosePizza(pizza);
         assertTrue(cartPage.isCartNotEmpty(), "CartPage is empty");
 
-        double before = cartPage.getCurrentSum();
+        double initially = cartPage.getCurrentSum();
 
         cartPage.changeQuantityAndWaitForSumUpdate(1, true);
         double afterIncrease = cartPage.getCurrentSum();
-        assertTrue(afterIncrease > before, "The sum has not increased");
+        assertTrue(afterIncrease > initially, "The sum has not increased");
 
         cartPage.changeQuantityAndWaitForSumUpdate(1, false);
         double afterDecrease = cartPage.getCurrentSum();
@@ -78,7 +76,6 @@ public class CartPageTest extends BaseTest {
     }
 
     @Test
-    @Order(3)
     @Story("Переход к оплате")
     @DisplayName("Проверка перехода к оплате после авторизации")
     @Description("Авторизуется, добавляет пиццу в корзину и проверяет переход к странице оплаты.")
@@ -92,7 +89,6 @@ public class CartPageTest extends BaseTest {
     }
 
     @Test
-    @Order(4)
     @Story("Применение промокода")
     @DisplayName("Применение промокода и проверка скидки")
     @Description("Авторизуется, добавляет пиццу в корзину, применяет промокод и проверяет, что скидка применилась.")

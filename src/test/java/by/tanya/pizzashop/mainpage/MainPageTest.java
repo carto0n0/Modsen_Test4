@@ -21,7 +21,6 @@ public class MainPageTest extends BaseTest {
     }
 
     @Test
-    @Order(1)
     @Feature("Изменение карточек в слайдере")
     @Story("Работоспособность правой стрелки")
     @DisplayName("Проверка пролистывания слайдера вправо")
@@ -36,7 +35,6 @@ public class MainPageTest extends BaseTest {
     }
 
     @Test
-    @Order(2)
     @Feature("Изменение карточек в слайдере")
     @Story("Работоспособность левой стрелки")
     @DisplayName("Проверка пролистывания слайдера влево")
@@ -51,7 +49,6 @@ public class MainPageTest extends BaseTest {
     }
 
     @Test
-    @Order(3)
     @Feature("Карточки товара")
     @Story("Появление кнопки 'Добавить в корзину' ")
     @DisplayName("Появление кнопки 'Добавить в корзину' при наведении на напиток")
@@ -65,7 +62,6 @@ public class MainPageTest extends BaseTest {
     }
 
     @Test
-    @Order(4)
     @Feature("Карточки товара")
     @Story("При клике на карточку товара открывается его страница")
     @DisplayName("Переход на страницу десерта при клике по изображению")
@@ -79,7 +75,6 @@ public class MainPageTest extends BaseTest {
     }
 
     @Test
-    @Order(5)
     @Story("Пояление стрелки 'Вверх' при скролле вниз страницы")
     @DisplayName("Отображение стрелки 'Вверх' при прокрутке страницы")
     @Description("Проверяет, что стрелка 'Вверх' появляется при прокрутке страницы вниз.")
@@ -90,7 +85,6 @@ public class MainPageTest extends BaseTest {
     }
 
     @Test
-    @Order(6)
     @Story("Сыылки на соц. сети открываются в новых вкладках")
     @DisplayName("Проверка открытия ссылок на соцсети в новой вкладке")
     @Description("Проверяет, что при клике на ссылки соцсетей открываются новые вкладки.")
