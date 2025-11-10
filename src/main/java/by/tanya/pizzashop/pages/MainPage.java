@@ -174,9 +174,24 @@ public class MainPage extends GeneralPage {
 
     @Step("Получить активный слайд в слайдере")
     public String getActiveSlide() {
-        WebElement activeSlide = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.cssSelector("#accesspress_store_product-5 .slick-slide.slick-active")
-        ));
-        return activeSlide.getAttribute("data-slick-index");
+        By sliderTrack = By.cssSelector("#accesspress_store_product-5 .slick-track");
+        By anySlide = By.cssSelector("#accesspress_store_product-5 .slick-slide");
+        By activeSlide = By.cssSelector("#accesspress_store_product-5 .slick-slide.slick-active");
+
+        try {
+            wait.until(ExpectedConditions.presenceOfElementLocated(sliderTrack));
+            wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(anySlide));
+
+            wait.until(driver -> {
+                List<WebElement> activeSlides = driver.findElements(activeSlide);
+                return !activeSlides.isEmpty() && activeSlides.get(0).isDisplayed();
+            });
+
+            WebElement slide = driver.findElement(activeSlide);
+            return slide.getAttribute("data-slick-index");
+
+        } catch (TimeoutException e) {
+            return "unknown";
+        }
     }
 }
