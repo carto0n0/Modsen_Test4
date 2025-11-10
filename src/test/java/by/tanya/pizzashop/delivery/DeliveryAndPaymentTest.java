@@ -26,7 +26,7 @@ public class DeliveryAndPaymentTest extends BaseTest {
     @Description("Проверяет, что на странице указана минимальная сумма заказа — 800 рублей.")
     public void checkMinOrderSumIsPresent() {
         boolean isTextPresent = deliveryAndPaymentPage.isMinOrderSumPresent();
-        
+
         assertFalse(isTextPresent,
                 "The page does not specify that the minimum order amount is 800 rubles. Visually checked");
     }

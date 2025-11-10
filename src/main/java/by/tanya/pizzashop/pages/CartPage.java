@@ -72,8 +72,26 @@ public class CartPage extends GeneralPage {
     @Step("Нажать кнопку применения купона")
     public CartPage clickApplyCouponBtn() {
         scrollToPageElement(applyCouponBtn);
+
+        double generalBefore = Shared.parsePrice(generalSumBlock.getText());
+        double totalBefore = Shared.parsePrice(finalSumBlock.getText());
+
         safeClick(applyCouponBtn);
-        wait.until(driver -> getTotalPaymentSum() < getGeneralPaymentSum());
+
+        wait.until(driver -> {
+            try {
+                double generalAfter = Shared.parsePrice(
+                        driver.findElement(By.cssSelector(".cart-collaterals .cart-subtotal td span")).getText()
+                );
+                double totalAfter = Shared.parsePrice(
+                        driver.findElement(By.cssSelector("#post-20 strong > span")).getText()
+                );
+                return totalAfter < totalBefore || totalAfter != generalBefore || generalAfter != generalBefore;
+            } catch (StaleElementReferenceException | NoSuchElementException e) {
+                return false;
+            }
+        });
+
         return this;
     }
 
@@ -118,7 +136,6 @@ public class CartPage extends GeneralPage {
 
         return this;
     }
-
 
     @Step("Получить текущую сумму товара")
     public double getCurrentSum() {

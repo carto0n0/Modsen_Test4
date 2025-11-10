@@ -42,15 +42,15 @@ public class CartPageTest extends BaseTest {
         cartPage.openCartAndChoosePizza(pizza);
         assertTrue(cartPage.isCartNotEmpty(), "CartPage is empty");
 
-        int before = cartPage.getCurrentQuantity();
+        int initially = cartPage.getCurrentQuantity();
 
         cartPage.changeQuantity(1, true);
         int afterIncrease = cartPage.getCurrentQuantity();
-        assertTrue(afterIncrease > before, "The quantity has not increased");
+        assertTrue(afterIncrease > initially, "The quantity has not increased");
 
         cartPage.changeQuantity(1, false);
         int afterDecrease = cartPage.getCurrentQuantity();
-        assertTrue(afterDecrease == before, "The quantity has not decreased");
+        assertTrue(afterDecrease == initially, "The quantity has not decreased");
 
     }
 
