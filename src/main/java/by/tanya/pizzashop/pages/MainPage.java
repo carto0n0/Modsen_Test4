@@ -117,9 +117,16 @@ public class MainPage extends GeneralPage {
     @Step("Нажать на правую стрелку в слайдере")
     public MainPage clickArrowRight() {
         scrollToPageElement(slider);
-        WebElement activeSlide = driver.findElement(By.cssSelector("#accesspress_store_product-5 .slick-slide.slick-active"));
-        String currentIndex = activeSlide.getAttribute("data-slick-index");
-        safeClick(rightArrow);
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
+                By.cssSelector("#accesspress_store_product-5 .slick-slide")
+        ));
+        String currentIndex = getActiveSlide();
+
+        WebElement arrow = wait.until(ExpectedConditions.presenceOfElementLocated(
+                By.cssSelector("#accesspress_store_product-5 .slick-next")
+        ));
+
+        safeClick(arrow);
 
         wait.until(ExpectedConditions.not(
                 ExpectedConditions.attributeToBe(
