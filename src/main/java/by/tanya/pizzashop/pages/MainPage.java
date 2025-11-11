@@ -117,32 +117,21 @@ public class MainPage extends GeneralPage {
     @Step("Нажать на правую стрелку в слайдере")
     public MainPage clickArrowRight() {
         scrollToPageElement(slider);
-        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
-                By.cssSelector("#accesspress_store_product-5 .slick-slide")
-        ));
+        waitVisible(slider);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#accesspress_store_product-5 .slick-next")));
+
         String currentIndex = getActiveSlide();
-
-        WebElement arrow = wait.until(ExpectedConditions.presenceOfElementLocated(
-                By.cssSelector("#accesspress_store_product-5 .slick-next")
-        ));
-
-        safeClick(arrow);
-
-        wait.until(ExpectedConditions.not(
-                ExpectedConditions.attributeToBe(
-                        By.cssSelector("#accesspress_store_product-5 .slick-slide.slick-active"),
-                        "data-slick-index",
-                        currentIndex
-                )
-        ));
-
+        safeClick(rightArrow);
+        wait.until(driver -> {
+            String newIndex = getActiveSlide();
+            return !newIndex.equals(currentIndex);
+        });
         return this;
     }
 
     @Step("Нажать на левую стрелку в слайдере")
     public MainPage clickArrowLeft() {
         scrollToPageElement(slider);
-        safeClick(leftArrow);
         String currentIndex = getActiveSlide();
         safeClick(leftArrow);
         wait.until(driver -> {

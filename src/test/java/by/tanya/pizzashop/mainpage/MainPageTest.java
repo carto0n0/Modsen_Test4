@@ -26,6 +26,7 @@ public class MainPageTest extends BaseTest {
     @DisplayName("Проверка пролистывания слайдера вправо")
     @Description("Проверяет, что при клике на стрелку вправо слайд меняется.")
     public void testSliderOnMainPageRight() {
+        waitForPageReady();
 
         String firstSlide = mainPage.hoverOverSlider().getActiveSlide();
 

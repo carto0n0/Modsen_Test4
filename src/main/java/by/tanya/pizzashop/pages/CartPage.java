@@ -188,9 +188,11 @@ public class CartPage extends GeneralPage {
     }
 
     private void setQuantity(int newValue) {
+        waitClickable(quantityInput);
         quantityInput.click();
         quantityInput.clear();
         quantityInput.sendKeys(String.valueOf(newValue));
+        waitClickable(updateCartButton);
         safeClick(updateCartButton);
     }
 }

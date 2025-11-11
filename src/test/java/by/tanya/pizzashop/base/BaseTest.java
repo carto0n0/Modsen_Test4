@@ -1,6 +1,7 @@
 package by.tanya.pizzashop.base;
 
 import by.tanya.pizzashop.driver.DriverFactory;
+import by.tanya.pizzashop.pages.GeneralPage;
 import io.qameta.allure.Attachment;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,14 +12,15 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
+import java.time.Duration;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @ExtendWith(TestResultWatcher.class)
 public abstract class BaseTest {
     protected WebDriver driver;
-
     protected final Logger logger = LogManager.getLogger(getClass());
 
 
@@ -36,12 +38,29 @@ public abstract class BaseTest {
     @BeforeEach
     void clearBrowser() {
         try {
+            var handles = driver.getWindowHandles();
+            String mainWindow = driver.getWindowHandle();
+
+            for (String handle : handles) {
+                if (!handle.equals(mainWindow)) {
+                    driver.switchTo().window(handle);
+                    driver.close();
+                }
+            }
+
+            driver.switchTo().window(mainWindow);
             driver.manage().deleteAllCookies();
-            driver.get("about:blank");
 
             if (driver instanceof JavascriptExecutor js) {
                 js.executeScript("window.localStorage.clear(); window.sessionStorage.clear();");
             }
+
+            driver.navigate().to("about:blank");
+
+            if (driver instanceof JavascriptExecutor js) {
+                js.executeScript("document.open(); document.write(''); document.close();");
+            }
+
             logger.info("Browser state cleared (cookies, localStorage, sessionStorage)");
         } catch (Exception e) {
             logger.warn("Failed to clear browser state: {}", e.getMessage());
@@ -54,6 +73,14 @@ public abstract class BaseTest {
             driver.quit();
             logger.info("Driver was successfully closed");
         }
+    }
+
+    protected void waitForPageReady() {
+        try {
+            new WebDriverWait(driver, Duration.ofSeconds(10))
+                    .until(webDriver -> ((JavascriptExecutor) webDriver)
+                            .executeScript("return document.readyState").equals("complete"));
+        } catch (Exception ignored) {}
     }
 
     @Attachment(value = "Screenshot on failure", type = "image/png")
